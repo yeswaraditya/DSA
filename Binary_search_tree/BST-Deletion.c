@@ -45,6 +45,42 @@ void insert(struct node *root,int key)
         }
 }
 
+void delete(struct node *root,int key)
+{
+    struct node* temp;
+      struct node *delete=root;
+      while(delete!=NULL)
+      {
+          if(key==delete->data)
+          {
+              break;
+
+          }
+          else if(key<delete->data)
+          {
+            delete=delete->left;
+          }
+          else if(key>delete->right)
+          {
+            delete=delete->right;
+          }
+          
+      }
+      while(key==delete->data)
+      {
+        if(delete->left!=NULL ||delete->right!=NULL)
+        {
+            temp=delete->left;
+            insert(root,temp);
+
+            temp=delete->right;
+            insert(root,temp);
+        }
+        delete->data==NULL;
+        
+
+      }
+}
 
 
 void preorder(struct node *root)
@@ -103,6 +139,17 @@ int main() {
     insert(root, 56);
     
     printf("\nAfter insertion of 56:\n\n");
+    printf("preorder is :\n");
+    preorder(root);
+    printf("\ninorder is:");
+    inorder(root);
+    printf("\npostorder is:\n");
+    postorder(root);
+
+
+     delete(root, 56);
+    
+    printf("\nAfter deletion of 56:\n\n");
     printf("preorder is :\n");
     preorder(root);
     printf("\ninorder is:");
