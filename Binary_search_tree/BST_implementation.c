@@ -1,46 +1,44 @@
-// BST Implementation using LinkedList
-
-
 #include<stdio.h>
+#include<stdlib.h>
 
 struct node 
 {
     int data;
-    struct *left,*right;
+    struct node *left, *right;
 };
 
 struct node *create()
 {
     int x;
-    struct node *newnode=(struct node*)malloc(sizeof(struct node));
-    printf("do you want to create node enter 1 and 0 for no node");
-    scanf("%d",&x);
-    if(x==0)
-    {
-        return 0;
-    }
-        newnode->data=x;
-        printf("the left child is %d",x);
-          newnode->left=create();
-        printf("the right child is %d",x);
-        newnode->right=create();
-        return newnode; 
-
+    struct node *newnode = (struct node*)malloc(sizeof(struct node));
+    printf("Enter the data for the node (enter 0 to stop): ");
+    scanf("%d", &x);
     
-   
+    if (x == 0)
+    {
+        return NULL;
+    }
+
+    newnode->data = x;
+    
+    printf("Enter the left child for node %d: ", x);
+    newnode->left = create();
+
+    printf("Enter the right child for node %d: ", x);
+    newnode->right = create();
+
+    return newnode; 
 }
-
-
-
-
-
-
-
-
-
 
 int main()
 {
     struct node *root;
-    root=create();
+    root = create();
+    
+    // Add code to perform operations on the BST if needed
+
+    // Don't forget to free the allocated memory when you're done using the tree
+    // freeTree(root);
+
+    return 0;
 }
