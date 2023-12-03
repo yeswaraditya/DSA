@@ -16,7 +16,7 @@ int main()
    
     for(i=0;i<n;i++)
     {
-        int min=i;
+        int min=a[i];
 
         for(int j=i+1;j<n;j++)
         {
