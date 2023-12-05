@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": ".",
-      "program": "build/Debug/outDebug"
+      "cwd": "/Users/yalagaddaeswaraditya/Desktop/DSA/.vscode/linkedlist",
+      "program": "/Users/yalagaddaeswaraditya/Desktop/DSA/.vscode/linkedlist/build/Debug/outDebug"
     }
   ]
 }
