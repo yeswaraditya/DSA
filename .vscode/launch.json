@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/yalagaddaeswaraditya/Desktop/DSA/.vscode/linkedlist",
-      "program": "/Users/yalagaddaeswaraditya/Desktop/DSA/.vscode/linkedlist/build/Debug/outDebug"
+      "cwd": "/Users/yalagaddaeswaraditya/Desktop/DSA_GIT/DSA/sempractice/recursion",
+      "program": "/Users/yalagaddaeswaraditya/Desktop/DSA_GIT/DSA/sempractice/recursion/build/Debug/outDebug"
     }
   ]
 }
