@@ -13,10 +13,10 @@ int binarySearchRecursion(int a[],int low,int high,int key)
         }
         else if(key<a[mid])
         {
-            binarySearchRecursion(a,low,mid-1,key);
+           return binarySearchRecursion(a,low,mid-1,key);
         }
         else{
-            binarySearchRecursion(a,low,mid+1,key);
+           return binarySearchRecursion(a,mid+1,high,key);
             
         }
       }
