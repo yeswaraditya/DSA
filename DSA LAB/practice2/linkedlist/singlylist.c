@@ -25,8 +25,10 @@ void createnode()
         
     }
     else
+    {
     temp->next=newnode;
     temp=newnode;
+    }
 }
 
 void display()

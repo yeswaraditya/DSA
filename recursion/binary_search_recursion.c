@@ -48,4 +48,8 @@ int main()
         printf("val found at index %d",result);
     }
    else{
-    printf("element not found")
+    printf("element not found");
+   }
+
+   
+}
